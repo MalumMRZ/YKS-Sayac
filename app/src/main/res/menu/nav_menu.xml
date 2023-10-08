@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+    <item
+        android:title="Sayaç"
+        android:id="@+id/timer"
+        android:icon="@drawable/baseline_timer_24" />
+
+    <item android:title="Günlük Program"
+          android:id="@+id/day_calendar"
+          android:icon="@drawable/baseline_calendar_today_24"/>
+    <item android:title="Pomodoro"
+          android:id="@+id/pomodoro"
+          android:icon="@drawable/baseline_alarm_on_24"/>
+    <item android:title="Konu Takip"
+          android:id="@+id/followLessonProgram"
+          android:icon="@drawable/baseline_pencil_24"/>
+        <item android:title="Premium"
+            android:id="@+id/premiumMode"
+            android:icon="@drawable/baseline_workspace_premium_24"/>
+    <item android:title="Ayarlar"
+          android:id="@+id/settings"
+          android:icon="@drawable/baseline_settings_24"/>
+
+
+    </group>
+
+
+    <group>
+
+    <item android:title="Sosyal">
+<menu>
+    <item android:title="Paylaş"
+        android:id="@+id/Share"
+        android:icon="@drawable/baseline_share_24"/>
+    <item android:title="Bizi Takip Et"
+        android:id="@+id/FollowUs"
+        android:icon="@drawable/baseline_infos_24"/>
+</menu>
+    </item>
+
+</group>
+
+
+
+
+
+</menu>

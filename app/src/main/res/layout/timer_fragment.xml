@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearProgressBarMinute"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarMinute"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/customprogress"
+            android:rotation="-90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearProgressBarSecond"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarSecond"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/customprogress"
+            android:rotation="-90"
+            tools:layout_editor_absoluteX="239dp"
+            tools:layout_editor_absoluteY="385dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearProgressBarDay"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarDay"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/customprogress"
+            android:rotation="-90" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearProgressBarHour"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarHour"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progressDrawable="@drawable/customprogress"
+            android:rotation="-90"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="147dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/linearProgressBarDay"
+        app:layout_constraintEnd_toEndOf="@+id/linearProgressBarDay"
+        app:layout_constraintStart_toStartOf="@+id/linearProgressBarDay"
+        app:layout_constraintTop_toTopOf="@+id/linearProgressBarDay" />
+
+    <TextView
+        android:id="@+id/textMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/linearProgressBarMinute"
+        app:layout_constraintEnd_toEndOf="@+id/linearProgressBarMinute"
+        app:layout_constraintStart_toStartOf="@+id/linearProgressBarMinute"
+        app:layout_constraintTop_toTopOf="@+id/linearProgressBarMinute" />
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#000DFE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearProgressBarSecond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearProgressBarHour" />
+
+    <Button
+        android:id="@+id/buttonTYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:onClick="runTyt"
+        android:text="TYT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAYT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="runAyt"
+        android:text="AYT"
+        app:layout_constraintEnd_toStartOf="@+id/buttonYDT"
+        app:layout_constraintStart_toEndOf="@+id/buttonTYT"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonYDT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="52dp"
+        android:onClick="runYdt"
+        android:text="YDT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/linearProgressBarHour"
+        app:layout_constraintEnd_toEndOf="@+id/linearProgressBarHour"
+        app:layout_constraintStart_toStartOf="@+id/linearProgressBarHour"
+        app:layout_constraintTop_toTopOf="@+id/linearProgressBarHour" />
+
+    <TextView
+        android:id="@+id/textSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/linearProgressBarSecond"
+        app:layout_constraintEnd_toEndOf="@+id/linearProgressBarSecond"
+        app:layout_constraintStart_toStartOf="@+id/linearProgressBarSecond"
+        app:layout_constraintTop_toTopOf="@+id/linearProgressBarSecond" />
+
+    <Button
+        android:id="@+id/button_msu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="MSÜ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Profil"/>
+
+    <item android:id="@+id/globalchat"
+        android:icon="@drawable/baseline_chat_bubble_24"
+        android:title="Genel Sohbet"/>
+
+    <item android:id="@+id/chat"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="Sohbet"/>
+
+
+</menu>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/minWork"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:hint="Çalışma(dakika)"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/secWork"
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="Çalışma(saniye)"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/minBreak"
+            android:layout_width="1dp"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Mola(dakika)"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/secBreak"
+            android:layout_width="1dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Mola(saniye)"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/minLongBreak"
+            android:inputType="number"
+            android:layout_width="1dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Uzun Mola(dakika)"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/secLongBreak"
+            android:layout_width="1dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:hint="Uzun Mola (saniye)"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <EditText
+            android:id="@+id/longBreakByStudy"
+            android:inputType="number"
+            android:layout_width="1dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:hint="Ders Başına Uzun Mola"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/setDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="19dp"
+            android:onClick="uploadData"
+            android:text="Veriyi Yükle"/>
+
+        <Button
+            android:id="@+id/saveDataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="saveData"
+            android:textSize="20dp"
+            android:text="Veriyi Kaydet"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

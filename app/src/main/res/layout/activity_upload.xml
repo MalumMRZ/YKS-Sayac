@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/selectImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:onClick="select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select" />
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Başlık"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectImage" />
+
+
+    <EditText
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Detay"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <RadioGroup
+        android:id="@+id/radioLessonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentText">
+
+
+
+        <RadioButton
+            android:id="@+id/radioMatematik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Matematik" />
+
+        <RadioButton
+            android:id="@+id/radioFizik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fizik" />
+
+        <RadioButton
+            android:id="@+id/radioKimya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kimya" />
+
+        <RadioButton
+            android:id="@+id/radioBiyoloji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biyoloji" />
+
+        <RadioButton
+            android:id="@+id/radioEdebiyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edebiyat" />
+
+        <RadioButton
+            android:id="@+id/radioTurkce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Türkçe" />
+
+        <RadioButton
+            android:id="@+id/radioTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarih" />
+
+        <RadioButton
+            android:id="@+id/radioCografya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coğrafya" />
+
+        <RadioButton
+            android:id="@+id/radioFelsefe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Felsefe" />
+
+        <RadioButton
+            android:id="@+id/radioDin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Din" />
+
+
+        <RadioButton
+            android:id="@+id/radioIngilizce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İngilizce" />
+
+
+        <RadioButton
+            android:id="@+id/radioAlmanca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almanca" />
+
+        <RadioButton
+            android:id="@+id/radioFransizca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fransızca" />
+
+        <RadioButton
+            android:id="@+id/radioRusca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rusça" />
+
+        <RadioButton
+            android:id="@+id/radioArapca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arapça" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioClassGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioLessonGroup">
+
+        <RadioButton
+            android:id="@+id/radio12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="12.Sınıf" />
+
+        <RadioButton
+            android:id="@+id/radio11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11.Sınıf" />
+
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.Sınıf" />
+
+        <RadioButton
+            android:id="@+id/radio9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.Sınıf" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioExamGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioClassGroup">
+
+        <RadioButton
+            android:id="@+id/radioAYT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="AYT" />
+
+        <RadioButton
+            android:id="@+id/radioTYT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TYT" />
+
+        <RadioButton
+            android:id="@+id/radioYDT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YDT" />
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="upload"
+        android:text="Upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioExamGroup" />
+
+    <TextView
+        android:id="@+id/textLessons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/blue"
+        android:text="Dersler : "
+        app:layout_constraintBottom_toTopOf="@+id/radioLessonGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioLessonGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
